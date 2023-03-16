@@ -1,27 +1,21 @@
-    import user from "./components/user.json"
-  import Profile from "./components/Profile.jsx";
 
- export default function App() {
-  return <div>hi
-   
-    </div>;
-  
+import { Profile } from './components/Profile/Profile.jsx';
+import user from './user.json';
+
+export const App = () => {
+  return (<div><Profile
+        avatar={user.avatar}
+        username={user.username}
+        tag={user.usertag}
+        location={user.location}
+        stats={user.stats}
+        />
+    </div>);
 };
 
-
-// export const App = () => {
+//  export const App = () => {
 //   return (
-//     <div
-//       style={{
-//         height: '100vh',
-//         display: 'flex',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         fontSize: 40,
-//         color: '#010101',
-//       }}
-//     >
-//       React homework template
+//     <div><Profile />
 //     </div>
 //   );
 // };
