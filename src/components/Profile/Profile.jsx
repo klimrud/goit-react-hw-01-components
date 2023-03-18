@@ -1,51 +1,36 @@
+import {PropTypes} from "prop-types";
+import { ProfileInfo } from "components/Profile/ProfileInfo.jsx";
+import css from 'components/Profile/Profile.module.css';
+
 export const Profile = ({
-  avatar,
   username,
   tag,
-  location
-}) => {
+  avatar,
+  location,
+  stats}
+) => {
   return (
-  <div class="profile">
-      <div class="description">
-        <img src={avatar} alt="User avatar" class="avatar" />
-        <p class="name">{username}</p>
-        <p class="tag">{tag}</p>
-        <p class="location">{location}</p>
+    <div className={css.profile}>
+      <div className={css.description}>
+        <img src={avatar} alt="User avatar" className={css.avatar} />
+        <p className={css.name}>{username}</p>
+        <p className={css.tag}>@{tag}</p>
+        <p className={css.location}>{location}</p>
       </div>
+        <ProfileInfo  
+        stats={stats}
+        followers={stats.followers}
+        views={stats.views}
+        likes={stats.likes}/>
     </div>
-    );
+  );
 };
 
-// export const Profile = ({avatar,username,tag,location,stats :[{followers,views,likes}]}) => {
-//   return (
-//     <div class="profile">
-// <div class="description">
-//   <img
-//     src={avatar}
-//     alt="User avatar"
-//     class="avatar"
-//   />
-//   <p class="name">{username}</p>
-//   <p class="tag">{tag}</p>
-//   <p class="location">{location}</p>
-// </div>
+ Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  avatar: PropTypes.string,
+  location: PropTypes.string,
+  stats: PropTypes.string,
+};
 
-// <ul class="stats">
-//   <li>
-//     <span class="label"></span>
-//     <span class="quantity">{followers}</span>
-//   </li>
-//   <li>
-//     <span class="label"></span>
-//     <span class="quantity">{views}</span>
-//   </li>
-//   <li>
-//     <span class="label"></span>
-//     <span class="quantity">{likes}</span>
-//   </li>
-// </ul>
-// </div>
-//   );
-// }
-
-// export default Profile;

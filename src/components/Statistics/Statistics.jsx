@@ -1,8 +1,11 @@
-export const Statistics = ({title}) => {
-  return (<div>
-  <h2 class="title">{title}</h2>
+ import { StatsStatistics } from "./StatsStatistics";
+ import css from "components/Statistics/Statistics.module.css"
 
-
-  </div>
+export const Statistics = ({stats}) => {
+  return (
+  <section className={css.statistics}>
+     <h2 class="title">Upload stats</h2>
+     <StatsStatistics stats={stats} />
+  </section>
   );
 };
