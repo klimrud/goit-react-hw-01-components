@@ -1,23 +1,23 @@
-.friend-list{
+.friend-list {
   list-style: none;
   margin: auto;
 }
 
-.item{
+.item {
   display: flex;
   margin: 0 auto;
   width: 500px;
   height: 80px;
-  
+
   border-radius: 2px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.stats{
+.stats {
   padding: 30px;
 }
 
-.name{
+.name {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -30,20 +30,20 @@
   /* border: 2px solid yellow; */
 }
 
-.avatar{
+.avatar {
   margin-top: 10px;
   width: 60px;
- height: 60px;
-border-radius: 8px;
+  height: 60px;
+  border-radius: 8px;
   border: 2px solid rgb(0, 0, 0, 0.2);
 }
 
-.icon{
- fill: red;
- stroke: red;
+.icon {
+  fill: red;
+  stroke: red;
 }
 
-.iconFalls{
+.iconFalls {
   fill: green;
- stroke: green;
+  stroke: green;
 }
