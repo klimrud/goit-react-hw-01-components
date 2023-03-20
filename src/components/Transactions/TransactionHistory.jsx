@@ -1,26 +1,17 @@
+import {TransactionTd} from 'components/Transactions/TransactionTd.jsx'
 import css from 'components/Transactions/TransactionHistory.module.css'
 
-export const TransactionHistory = () => {
- return <table className={css['transaction-history']}>
-  {/* <thead>
+export const TransactionHistory = ({transactions}) => {
+ return (
+ <table className={css['transaction-history']}>
+   <thead>
     <tr>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
+      <th className={css.th}>Type</th>
+      <th className={css.th}>Amount</th>
+      <th className={css.th}>Currency</th>
     </tr>
   </thead>
-
-  <tbody>
-    <tr>
-      <td>Invoice</td>
-      <td>125</td>
-      <td>USD</td>
-    </tr>
-    <tr>
-      <td>Withdrawal</td>
-      <td>85</td>
-      <td>USD</td>
-    </tr>
-  </tbody> */}
-</table> 
+  <TransactionTd  transactions={transactions}/>
+</table> )
 }
+

@@ -1,8 +1,49 @@
 .friend-list{
-  width: 400px;
-  border: 2px solid blue;
+  list-style: none;
+  margin: auto;
 }
 
 .item{
+  display: flex;
+  margin: 0 auto;
+  width: 500px;
+  height: 80px;
+  
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
 
+.stats{
+  padding: 30px;
+}
+
+.name{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-left: 30px;
+  /* border: 2px solid yellow; */
+}
+
+.avatar{
+  margin-top: 10px;
+  width: 60px;
+ height: 60px;
+border-radius: 8px;
+  border: 2px solid rgb(0, 0, 0, 0.2);
+}
+
+.icon{
+ fill: red;
+ stroke: red;
+}
+
+.iconFalls{
+  fill: green;
+ stroke: green;
 }

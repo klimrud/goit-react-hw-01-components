@@ -4,8 +4,9 @@
 export const Statistics = ({stats}) => {
   return (
   <section className={css.statistics}>
-     <h2 class="title">Upload stats</h2>
+     <h2 className={css.title}>Upload stats</h2>
      <StatsStatistics stats={stats} />
   </section>
   );
 };
+

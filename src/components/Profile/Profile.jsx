@@ -29,8 +29,7 @@ export const Profile = ({
  Profile.propTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
-  avatar: PropTypes.string,
-  location: PropTypes.string,
-  stats: PropTypes.string,
+  avatar: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired, 
 };
 
